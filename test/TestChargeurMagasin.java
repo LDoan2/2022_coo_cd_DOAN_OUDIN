@@ -11,7 +11,7 @@ public class TestChargeurMagasin {
     public void test1() throws FileNotFoundException {
         boolean error = false;
         try {
-            String repertoire = "musicBrainz/";
+            String repertoire = "/musicBrainz/";
             ChargeurMagasin charge = new ChargeurMagasin(repertoire);
             Magasin resultat = charge.chargerMagasin();
         }catch (FileNotFoundException e){
