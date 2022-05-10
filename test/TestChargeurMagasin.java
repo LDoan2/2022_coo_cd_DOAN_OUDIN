@@ -20,4 +20,16 @@ public class TestChargeurMagasin {
         assertEquals(false, error, "Repertoire incorrect");
     }
 
+    public void test2() throws FileNotFoundException{
+        boolean error = false;
+        try {
+            String repertoire = "musicBrainz/";
+            ChargeurMagasin charge = new ChargeurMagasin(repertoire);
+            Magasin resultat = charge.chargerMagasin();
+        }catch (FileNotFoundException e){
+            error = true;
+        }
+        assertEquals(true, error, "Repertoire incorrect");
+    }
+
 }
