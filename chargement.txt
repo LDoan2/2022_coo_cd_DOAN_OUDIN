@@ -1,0 +1,15 @@
+Compréhension du diagramme de séquence :
+
+Le diagramme de séquence démarre du Main et va faire appel au constructeur de la classe ChargeurMagasin
+et va construire un objet à partir du String rentré en paramétre qui va s'appeler chargeur.
+
+A partir de l'objet nouvellement créé, on va faire appelle à la méthode chargerMagasin qui va créer un objet de type Magasin,
+qui va s'appeler magasin, puis, va créer un objet de type ChargeurCD à partir d'un fichier qui va s'appeler chargeCd1.
+
+Le nouvelle objet de type ChargeurCD va ensuite faire appelle a la méthode chargerCD()
+qui va créer un objet de type CD qui va s'appeler cd1.
+
+cd1 va ensuite récupérer les données nécessaires pour créer un CD et va utiliser la méthode ajouterPiste,
+pour chaque informations lues.
+
+Pour conclure, pour chaque CD, créés, ceux ci vont être ajoutés au magasin.
