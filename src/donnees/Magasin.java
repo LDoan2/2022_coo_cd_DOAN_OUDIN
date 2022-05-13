@@ -69,7 +69,7 @@ public class Magasin {
 	}
 
 	public int comparerTitre(CD cd1,CD cd2){
-
+		return cd1.getNomCD().compareTo(cd2.getNomCD());
 	}
 
 	public void triCDs(){
