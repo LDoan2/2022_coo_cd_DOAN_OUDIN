@@ -78,8 +78,8 @@ public class Magasin {
 	}
 
 
-	public int compareArtiste(CD cd1, CD cd2){
-
+	public int compareArtiste(int i, int j){
+		return (this.getCd(i).getNomArtiste().compareTo(this.getCd(j).getNomArtiste()));
 	}
 
 	public void triArtiste(){
