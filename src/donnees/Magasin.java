@@ -69,7 +69,7 @@ public class Magasin {
 	}
 
 	public void triCDs(){
-
+		throw new Error();
 
 	}
 
