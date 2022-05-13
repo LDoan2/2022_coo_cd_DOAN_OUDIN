@@ -85,11 +85,30 @@ public class Magasin {
 	public void triArtiste(){
 		// On cree une liste vide pour contenir la nouvelle liste d'albums
 		ArrayList<CD> temp = new ArrayList<CD>();
+		// On cree un objet qui va stocker le plus petit element
+		CD tempCd = null;
+
+		int index = 0;
 
 		// On parcourt la liste a la recherche du premiere element dans une liste croissante
 		for (int i = 0; i < this.listeCds.size(); i++){
-
+			// On compare chaque element avec tous les elements du tableau
+			for (int j = 0; j < this.listeCds.size() ; j++){
+				if (this.compareArtiste(i, j) > 0){
+					tempCd = this.getCd(i);
+					// On garde en index le rang du cd dans l'ordre croissant
+					index = i;
+				}
+			}
 		}
+		// On ajoute le cd le plus petit a la liste temp
+		temp.add(tempCd);
+		// On supprimer l element ajouté
+		this.listeCds.remove(index);
+
+
+
+
 	}
 
 }
