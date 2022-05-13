@@ -68,6 +68,10 @@ public class Magasin {
 		return(res);
 	}
 
+	public int comparerTitre(CD cd1,CD cd2){
+
+	}
+
 	public void triCDs(){
 		throw new Error();
 
