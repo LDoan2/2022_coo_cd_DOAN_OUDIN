@@ -112,14 +112,13 @@ public class Magasin {
 					index = i;
 				}
 			}
+			// On ajoute le cd le plus petit a la liste temp
+			temp.add(tempCd);
+			// On supprimer l element ajouté
+			this.listeCds.remove(index);
 		}
-		// On ajoute le cd le plus petit a la liste temp
-		temp.add(tempCd);
-		// On supprimer l element ajouté
-		this.listeCds.remove(index);
 
-
-
+		this.listeCds = temp;
 
 	}
 
