@@ -56,7 +56,7 @@ public class Magasin {
 	}
 	
 	/**
-	 * permet d'acceder à un CD
+	 * permet d'acceder ï¿½ un CD
 	 * 
 	 * @return le cd a l'indice i ou null si indice est non valide
 	 */
@@ -71,6 +71,21 @@ public class Magasin {
 	public void triCDs(){
 		throw new Error();
 
+	}
+
+
+	public int compareArtiste(CD cd1, CD cd2){
+
+	}
+
+	public void triArtiste(){
+		// On cree une liste vide pour contenir la nouvelle liste d'albums
+		ArrayList<CD> temp = new ArrayList<CD>();
+
+		// On parcourt la liste a la recherche du premiere element dans une liste croissante
+		for (int i = 0; i < this.listeCds.size(); i++){
+
+		}
 	}
 
 }
