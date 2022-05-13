@@ -68,13 +68,25 @@ public class Magasin {
 		return(res);
 	}
 
-	public int comparerTitre(CD cd1,CD cd2){
-		return cd1.getNomCD().compareTo(cd2.getNomCD());
+	public int comparerTitre(int i,int j){
+		return this.getCd(i).getNomCD().compareTo(this.getCd(j).getNomCD());
 	}
 
-	public void triCDs(){
-		throw new Error();
-
+	public void triAlbum(){
+		ArrayList<CD> trier = new ArrayList<CD>();
+		int index;
+		int taille = this.listeCds.size();
+		for(int i = 0; i < taille; i++){
+			index = 0;
+			for(int j = 1; j < this.listeCds.size(); j++ ){
+				if(this.comparerTitre(j,index) < 0){
+					index = j;
+				}
+			}
+			trier.add(this.getCd(index));
+			this.listeCds.remove(index);
+		}
+		this.listeCds = trier;
 	}
 
 
