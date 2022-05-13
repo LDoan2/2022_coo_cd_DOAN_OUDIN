@@ -68,7 +68,7 @@ public class Magasin {
 		return(res);
 	}
 
-	public void triAlbmu(){
+	public void triCDs(){
 
 
 	}
