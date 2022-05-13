@@ -11,7 +11,7 @@ public class TestChargeurMagasin {
     public void test1() throws FileNotFoundException {
         boolean error = false;
         try {
-            String repertoire = "/musicBrainz/";
+            String repertoire = "musicBrainz/";
             ChargeurMagasin charge = new ChargeurMagasin(repertoire);
             Magasin resultat = charge.chargerMagasin();
         }catch (FileNotFoundException e){
@@ -20,10 +20,11 @@ public class TestChargeurMagasin {
         assertEquals(false, error, "Repertoire incorrect");
     }
 
+    @Test
     public void test2() throws FileNotFoundException{
         boolean error = false;
         try {
-            String repertoire = "musicBrainz/";
+            String repertoire = "Brainz/";
             ChargeurMagasin charge = new ChargeurMagasin(repertoire);
             Magasin resultat = charge.chargerMagasin();
         }catch (FileNotFoundException e){
