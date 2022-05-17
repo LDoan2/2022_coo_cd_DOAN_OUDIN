@@ -31,7 +31,7 @@ public class TestTriCD {
     @Test
     public void test_tri_artiste(){
         Magasin magasin = new Magasin();
-        ComparateurAlbum comparateur = new ComparateurAlbum();
+        ComparateurArtiste comparateur = new ComparateurArtiste();
         CD cd1 = new CD("a","a");
         CD cd2 = new CD("b","b");
         CD cd3 = new CD("c","c");
