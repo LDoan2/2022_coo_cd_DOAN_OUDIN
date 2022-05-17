@@ -7,7 +7,6 @@ class CD{
     - String separator
     - String nomArtiste
     - String nomCD
-    - ArrayList<InfoPiste> pistes
     + CD (String artiste, String nomCdparam)
     + ajouterPiste(InfoPiste infoPiste)
     + toString () : String
@@ -17,7 +16,6 @@ class CD{
 }
 
 class Magasin{
-    - ArrayList<CD> listeCDs
     + Magasin ()
     + ajouterCD (CD cd1)
     + toString () : String
@@ -44,5 +42,7 @@ class InfoPiste{
 
 ComparateurCd <|.. ComparateurAlbum
 ComparateurCd <|.. ComparateurArtiste
+CD "*" <-- "1"Magasin : listeCDs
+InfoPiste "*" <-- "1" CD : pistes
 
 @enduml
