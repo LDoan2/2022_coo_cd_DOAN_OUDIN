@@ -1,0 +1,18 @@
+Question 3 :
+Pour ajouter un nouveau tri,il faudrai ajouter deux méthodes dans deux classes différentes ( CD, Magasin).
+Cette technique ne semble pas efficace sur du long terme étant donné qu'il faudrai réécrire
+des méthodes qui se ressemble ce qui pourrai nous mener à nous perdre.
+
+Question 4 :
+Des copier coller ont été réalisé pour écrire les méthodes notament pour les boucles et le parcours des listes.
+Si un morceau du code se révélait être buggé, il faudrait tout modifier à la main.
+
+Question 5 :
+Le code commun entre les deux méthodes de tri sont les parcours de listes.
+Ces codes correspondent au parcours de listes.
+Le code qui diffère les deux méthodes de tri est l'appel d'une autre méthode qui compare soit les titre, soit les
+nom d'artiste.
+
+Question 6 :
+Pour faire un autre type de tri, il faudrai ajouter une nouvelle méthode dans la classe Magasin.Le code qui
+serait à conserver est le parcours de liste.
