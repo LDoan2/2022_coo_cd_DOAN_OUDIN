@@ -1,5 +1,4 @@
-import donnees.CD;
-import donnees.Magasin;
+import donnees.*;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -14,8 +13,9 @@ public class TestTriCD {
         magasin.ajouteCd(cd1);
         magasin.ajouteCd(cd3);
         magasin.ajouteCd(cd2);
+        ComparateurCd comparateurAlbum = new ComparateurAlbum();
 
-        magasin.triAlbum();
+        magasin.trierGenerique(comparateurAlbum);
 
         assertEquals(cd1.getNomCD(),magasin.getCd(0).getNomCD(),"C'est pas le bon cd");
         assertEquals(cd2.getNomCD(),magasin.getCd(1).getNomCD(),"C'est pas le bon cd");
