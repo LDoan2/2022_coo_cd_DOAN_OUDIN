@@ -104,4 +104,25 @@ public class CD {
 	public String getNomArtiste() {
 		return nomArtiste;
 	}
+
+	/**
+	 * comparateur de cd selon le nom
+	 *
+	 * @param cd
+	 *            cd a comparer
+	 * @return vrai si this est avant cd
+	 */
+	public boolean etreAvantAlbum(CD cd) {
+		return (this.nomCD.compareTo(cd.nomCD) < 0);
+	}
+
+	/**
+	 * comparateur de cd selon le nom d'artiste
+	 *
+	 * @param cdTemp
+	 * @return
+	 */
+	public boolean etreAvantArtiste(CD cd) {
+		return (this.nomArtiste.compareTo(cd.nomArtiste) < 0);
+	}
 }
