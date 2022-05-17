@@ -119,6 +119,7 @@ public class Magasin {
 
 		this.listeCds = temp;
 
+
 	}
 
 }
