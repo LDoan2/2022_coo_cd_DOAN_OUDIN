@@ -1,0 +1,48 @@
+@startuml
+interface ComparateurCd{
+    + etreAvant (CD cd1, CD cd2) : boolean
+}
+
+class CD{
+    - String separator
+    - String nomArtiste
+    - String nomCD
+    - ArrayList<InfoPiste> pistes
+    + CD (String artiste, String nomCdparam)
+    + ajouterPiste(InfoPiste infoPiste)
+    + toString () : String
+    + numeroPiste(int i) : String
+    + getnomCD () : String
+    + getnomArtiste () : String
+}
+
+class Magasin{
+    - ArrayList<CD> listeCDs
+    + Magasin ()
+    + ajouterCD (CD cd1)
+    + toString () : String
+    + getNombreCD () : int
+    + getCD (int i) CD
+    + trierGenerique (ComparateurCd comparateu)
+}
+
+class ComparateurAlbum{
+    + etreAvant (CD cd1, CD cd2) : bollean
+}
+
+class ComparateurArtiste{
+    + etreAvant (CD cd1, CD cd2) : bollean
+}
+
+class InfoPiste{
+    - String nomPiste
+    - int dureeMillisecondes
+    + InfoPiste (String nom, int duree)
+    + toString () : String
+    + dureeEnminute (int milliSecondes) : String
+}
+
+ComparateurCd <|.. ComparateurAlbum
+ComparateurCd <|.. ComparateurArtiste
+
+@enduml
